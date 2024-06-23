@@ -65,7 +65,7 @@ public class UserServiceImpl implements UserServiceInterface {
         EmailDetailsDTO email = EmailDetailsDTO.builder()
                 .receipient(savedUser.getEmail())
                 .subject("New Account Created for you " + savedUser.getFirstName() + " " + savedUser.getLastName() + " " + savedUser.getOtherName())
-                .messageBody("Name  : " + savedUser.getFirstName() + " " + savedUser.getLastName() + " " + savedUser.getOtherName() +
+                .messageBody("Congrats! You account at Bank of Maya has been created" + "\nAccount Details shown below\n" + "Name  : " + savedUser.getFirstName() + " " + savedUser.getLastName() + " " + savedUser.getOtherName() +
                         "\n Account Number   : " + savedUser.getAccountNumber())
                 .build();
 
